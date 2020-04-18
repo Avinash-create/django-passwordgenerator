@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+<body>
+
+	<div class="container text-center">
+	<h1>Password Generator</h1>
+	<form action="password" method="GET">
+		<select name="length"> 
+			<option>Select</option>
+			<script type="text/javascript">
+				for (var i = 1; i <=12; i++) {
+					document.write("<option>"+i+"</option>")
+				}
+			</script>
+				
+		</select> Length<br>
+		<input type="checkbox" name="uppercase">UPPERCASE
+		<br>
+		<input type="checkbox" name="special">Special Character
+		<br>
+		<br>
+
+		<input type="submit" value="Generate Password" class="btn btn-outline-primary">
+	</form>
+	</div>
+
+	<a href="{%url 'about' %">About</a>
+
+
+
+
+
+</body>
+</html>
